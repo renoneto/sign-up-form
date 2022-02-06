@@ -1,0 +1,163 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#left-main {
+    display: flex;
+    flex-direction: column;
+    background-image: url('background-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 90%;
+    flex: 2.5;
+}
+
+#left-first {
+    flex-shrink: 1;
+    height: 25%;
+}
+
+#left-logo {
+    background-color: rgba(0, 0, 0, 0.493);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10%;
+    max-height: 5%;
+}
+
+img {
+    width: 25%;
+}
+
+#odin-text {
+    color: white;
+    font-size: 60px;
+}
+
+#left-second {
+    flex-shrink: 1;
+    height: 85%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+#right-main {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(153, 151, 151, 0.082);
+}
+
+#right-form {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form-header {
+    padding-bottom: 10px;
+}
+
+.font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#form-first-row,
+#form-second-row,
+#form-third-row {
+    display: flex;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+}
+
+#form-first-row > div,
+#form-second-row > div,
+#form-third-row  > div {
+    width: 250px;
+}
+
+#form-first-row > div:first-child,
+#form-second-row > div:first-child,
+#form-third-row  > div:first-child {
+    padding-right: 75px;
+}
+
+.right {
+    padding: 30px;
+}
+
+/*inputs*/
+input {
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 14px;
+    height: 10px;
+}
+
+input:focus-visible {
+    outline-color: rgba(23, 136, 0, 0.356);
+    box-shadow: 0 0 10px rgba(0, 255, 21, 0.192);
+}
+
+button{
+    display:inline-block;
+    padding:0.75em 3.6em;
+    border:0.1em solid #000000;
+    border-radius: 10px;
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    color:#000000;
+    background-color:#00d84152;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+button:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#0000009a;
+    border-color:#00000070;
+    background-color:#00d8412f;
+    text-shadow: 0 0.03em 0.03em rgba(0,0,0,0.35);
+}
+
+#password, #confirm_password {
+    outline-color:rgba(255, 0, 0, 0.37);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.719);
+}
+
+#requirements-second {
+    display: none;
+}
+
+.requirements {
+    color: rgb(196, 3, 3);
+}
+
+label {
+    padding-left: 3px;
+}
